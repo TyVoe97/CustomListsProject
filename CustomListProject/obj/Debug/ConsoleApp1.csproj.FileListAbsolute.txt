@@ -1,0 +1,7 @@
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\bin\Debug\CustomListProject.exe.config
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\bin\Debug\CustomListProject.exe
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\bin\Debug\CustomListProject.pdb
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\CustomListProject.exe
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\CustomListProject.pdb

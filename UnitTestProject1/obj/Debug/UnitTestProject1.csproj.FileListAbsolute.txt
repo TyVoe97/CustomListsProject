@@ -1,0 +1,2 @@
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\UnitTestProject1\obj\Debug\UnitTestProject1.csprojAssemblyReference.cache
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache

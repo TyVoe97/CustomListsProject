@@ -8,8 +8,10 @@ namespace ConsoleApp1
 {
     public class CustomList<T> 
     {
+       
         private int count;
-        T [] items = new T[10];
+        
+         T [] items = new T[4];
         public T this[int index]
         {
             get
@@ -21,13 +23,12 @@ namespace ConsoleApp1
                 items[index] = value;
             }
         }
-
         public int Count{get { return count; }}
- 
+        private int capacity = 4;
         public void Add(T value)
         {
             
-            T[] temp = new T[10];
+            T[] temp = new T[capacity * 2];
             for (int i = 0; i < count; i++) 
             {
                 temp[i] = items[i];

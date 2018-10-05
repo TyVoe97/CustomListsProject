@@ -24,7 +24,7 @@ namespace UnitTestProject1
             //Arrange
             CustomList<int> customList = new CustomList<int>();
             int value = 4;
-            int countValue = 2;
+            int countValue = 1;
 
             //Act
             customList.Add(value);
@@ -69,23 +69,6 @@ namespace UnitTestProject1
 
             Assert.AreEqual(15, customList[0]);
         }
-        [TestMethod]
-        public void TestMethod5()
-        {
-            //Arrange
-            CustomList<int> customList = new CustomList<int>();
-
-
-            
-            customList.remove(24);
-            customList.remove(28);
-           
-
-            //Act
-
-
-
-            Assert.AreEqual(15, customList[0]);
-        }
+       
     }
 }

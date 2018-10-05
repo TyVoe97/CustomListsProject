@@ -12,32 +12,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // CustomList<int> customList = new CustomList<int>();
-            List<int> testList = new List<int>();
-
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
-            testList.Add(1);
+         
+           
         }
     }
 }

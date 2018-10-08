@@ -5,3 +5,5 @@ C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClass
 C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\CustomListProject.exe
 C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\CustomListProject.pdb
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\bin\Debug\Reflector.dll
+C:\Users\tydud\OneDrive\Desktop\School\Portfolio-1\Dev Code camp\CustomListClassProject\CustomListProject\CustomListProject\obj\Debug\ConsoleApp1.csproj.CopyComplete

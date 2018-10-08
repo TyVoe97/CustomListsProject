@@ -25,6 +25,8 @@ namespace ConsoleApp1
         }
         public int Count{get { return count; }}
         private int capacity = 4;
+        private T[] numbers;
+
         public void Add(T value)
         {
             
@@ -37,6 +39,33 @@ namespace ConsoleApp1
             count++;
             items = temp;
         }
+        public void Remove(T value)
+        {
+            int tempCount = Count - 1;
+            T[] tempArray = new T[tempCount];
+            int Location = 0;
+            int d = 0;
+            for (int i = 0; i < count; i++)
+            {
+                if (numbers[i].Equals(value))
+                {
+                    Location = i;
+                    break;
+                }
+            }
+           if (Location > 0)
+            {
+                for( int e =0; e <Count; e++)
+                {
+                    if (!numbers[e].Equals(value))
+                    {
+                        tempArray[d] = numbers[e];
+                        d += 1;
+                    }
+                }
+                numbers = tempArray;
+            }
+            count = d;
+        }
     }
-  
 }

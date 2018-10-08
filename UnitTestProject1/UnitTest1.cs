@@ -45,6 +45,7 @@ namespace UnitTestProject1
             //Act
             customList.Add(value);
             customList.Add(value1);
+            
 
             Assert.AreEqual(value, customList[0]);
         }
@@ -62,13 +63,77 @@ namespace UnitTestProject1
             customList.Add(34);
             customList.Add(47);
             customList.Add(55);
-
+          
             //Act
 
 
 
             Assert.AreEqual(15, customList[0]);
         }
-       
+        public void TestMethod5()
+        {
+            //Arrange
+            CustomList<int> customList = new CustomList<int>();
+
+
+            customList.Add(15);
+            customList.Add(24);
+            customList.Add(28);
+            customList.Add(34);
+            customList.Add(47);
+            customList.Add(55);
+            customList.Remove(28);
+            customList.Remove(47);
+
+            //Act
+
+
+
+            Assert.AreEqual(28, customList[0]);
+        }
+        [TestMethod]
+        public void TestMethod6()
+        {
+            //Arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value = 1;
+            //Act
+            customList.Add(value);
+
+            // Assert
+            Assert.AreEqual(value, customList[0]);
+        }
+        [TestMethod]
+        public void TestMethod7()
+        {
+            //Arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value = 4;
+            int countValue = 1;
+
+            //Act
+            customList.Add(value);
+
+
+            // Assert
+            Assert.AreEqual(customList.Count, countValue);
+        }
+        [TestMethod]
+        public void TestMethod8()
+        {
+            //Arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value = 1;
+            int value1 = 2;
+
+
+            //Act
+            customList.Add(value);
+            customList.Add(value1);
+
+
+            Assert.AreEqual(value, customList[0]);
+        }
+
     }
 }

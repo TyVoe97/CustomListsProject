@@ -53,9 +53,9 @@ namespace ConsoleApp1
                     break;
                 }
             }
-           if (Location > 0)
+            if (Location > 0)
             {
-                for( int e =0; e <Count; e++)
+                for (int e = 0; e < Count; e++)
                 {
                     if (!numbers[e].Equals(value))
                     {
@@ -66,6 +66,15 @@ namespace ConsoleApp1
                 numbers = tempArray;
             }
             count = d;
+        }
+        string addedString = "";
+        public override string ToString()
+        {
+            for( int i = 0; i < count; i++)
+            {
+                addedString = items[i].ToString();
+            }
+            return addedString;
         }
     }
 }

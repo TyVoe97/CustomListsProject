@@ -96,8 +96,18 @@ namespace ConsoleApp1
             }
             return output;
         }
-      
-        
+
+        public static CustomList<T> operator- (CustomList<T> listA, CustomList<T> listB)
+        {
+            CustomList<T> output = " ";
+            for (int i = 0; i < count; i++)
+            {
+                foreach (T element in listB)
+                {
+                    output.Add(element);
+                }
+                return output;
+            }
 
 
     }

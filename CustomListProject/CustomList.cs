@@ -1,17 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class CustomList<T> 
+    public class CustomList<T> : IEnumerable<T>
     {
-       
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                yield return items[i];
+            }
+        }
         private int count;
-        
-         T [] items = new T[4];
+
+        T[] items = new T[4];
         public T this[int index]
         {
             get
@@ -23,15 +34,15 @@ namespace ConsoleApp1
                 items[index] = value;
             }
         }
-        public int Count{get { return count; }}
+        public int Count { get { return count; } }
         private int capacity = 4;
         private T[] numbers;
 
         public void Add(T value)
         {
-            
+
             T[] temp = new T[capacity * 2];
-            for (int i = 0; i < count; i++) 
+            for (int i = 0; i < count; i++)
             {
                 temp[i] = items[i];
             }
@@ -47,7 +58,7 @@ namespace ConsoleApp1
             int d = 0;
             for (int i = 0; i < count; i++)
             {
-                if (numbers[i].Equals(value))
+                if (items[i].Equals(value))
                 {
                     Location = i;
                     break;
@@ -57,24 +68,37 @@ namespace ConsoleApp1
             {
                 for (int e = 0; e < Count; e++)
                 {
-                    if (!numbers[e].Equals(value))
+                    if (!items[e].Equals(value))
                     {
-                        tempArray[d] = numbers[e];
+                        tempArray[d] = items[e];
                         d += 1;
                     }
                 }
-                numbers = tempArray;
+                items = tempArray;
             }
             count = d;
         }
         string addedString = "";
         public override string ToString()
         {
-            for( int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++)
             {
-                addedString = items[i].ToString();
+                addedString += items[i].ToString();
             }
             return addedString;
         }
+        public static CustomList<T> operator +(CustomList<T> listA, CustomList<T> listB)
+        {
+            CustomList<T> output = listA;
+            foreach (T element in listB)
+            {
+                output.Add(element);
+            }
+            return output;
+        }
+      
+        
+
+
     }
 }

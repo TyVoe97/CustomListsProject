@@ -94,8 +94,9 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod7()
         {
-            CustomList<int> one = new CustomList<int>() { 1, 2, 3 };
-            CustomList<int> two = new CustomList<int>() { 4, 5, 6 };
+            string expected = "15,24,28,34,47,55";
+            CustomList<int> one = new CustomList<int>() { 15, 24, 28};
+            CustomList<int> two = new CustomList<int>() { 34, 47, 55};
             
             //Arrange
             CustomList<int> customList = new CustomList<int>();
@@ -107,7 +108,8 @@ namespace UnitTestProject1
             customList.Add(47);
             customList.Add(55); 
             CustomList<int> result = one + two; 
-            Assert.AreEqual( one, two);
+            
+            Assert.AreEqual( expected,);
 
         }
     }
